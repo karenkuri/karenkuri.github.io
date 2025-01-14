@@ -19,7 +19,7 @@ document.querySelector('#sidebar .toggle-sidebar').addEventListener('click', fun
 
 
 var options = {
-    strings: ['Master student in M.Sc. Digital Media'],
+    strings: ['Data Scientist with B.Sc. Computer Science and M.Sc. Digital Media'],
     loop: true,
     typeSpeed: 70,
     backSpeed: 10
