@@ -16,8 +16,7 @@ document.querySelector('#sidebar .toggle-sidebar').addEventListener('click', fun
     document.querySelector('#sidebar').classList.toggle('open')
 })
 
-
-
+/*
 var options = {
     strings: ['Data Scientist with B.Sc. Computer Science and M.Sc. Digital Media'],
     loop: true,
@@ -26,7 +25,7 @@ var options = {
 };
 
 new Typed('.field h2', options);
-
+*/
 
 
 for (let i = 1; i <= 15; i++) {
