@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Karen Hoffmann | Portfolio</title>
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,7 +21,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#home" class="inner-link">
+                    <a href="#home" class="inner-link active">
                         <i class="las la-home"></i>
                         <span>Home</span>
                     </a>
@@ -49,7 +49,7 @@
                     <span>My Work</span>
                 </li>
                 <li>
-                    <a href="#contact_me" class="active inner-link">
+                    <a href="#contact_me" class="inner-link">
                         <i class="las la-phone"></i>
                         <span>Contact Me</span>
                     </a>
@@ -59,17 +59,13 @@
         </nav>
     </div>
     <main>
-        <section id="home">
-            <div class="meteor-shower"></div>
+        <section id="home" class="active">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 info">
                         <h1><span>I’m</span> Karen Hoffmann</h1>
-                        <div class="field">
-                            <h2></h2>
-                        </div>
                         <p>
-                            My key interests revolve around the useer-centered developemt in the fields of Human-Computer Interaction with data visualization, and Machine Learning. 
+                            I like working at the intersection of data, visualization, and design — applying computational methods to interdisciplinary topics for both research and clear visual communication that helps people understand and engage with important issues.
                         </p>
                         <a class="btn-custom-blue" href="assets/files/cv.pdf" download>Download CV</a>
                     </div>
@@ -81,54 +77,51 @@
         </section>
         <section id="about_me">
             <div class="container">
-                <div class="row hero">
-                    <div class="col-xxl-6 col-lg-4 image">
-                        <img src="assets/images/person-about.png" alt="person about">
-                    </div>
-                    <div class="col-xxl-6 col-lg-8 info">
-                        <header class="has-bg">
-                            <img src="assets/images/h1-bg.png" alt="h1 bg">
-                            <h1>About Me</h1>
-                        </header>
-                        <h2>Master Student in M.Sc. Digital Media</h2>
-                        <p>
-                            I have graduated from M.Sc. Digital Media focusing on Media Informatics at the University of Bremen.  
-                            <br>
-                            I also hold B.Sc. Computer Science with a concentration in Human-Computer Interactions and a minor in
-                            Management and Society at the University of Calgary.
-                            <br>
-                            My key interests revolve around the fields of Human-Computer Interaction especially with data visualization, and Data Science.
+                <div class="text-center mb-5">
+                    <header class="has-bg">
+                        <img src="assets/images/h1-bg.png" alt="h1 bg">
+                        <h1>About Me</h1>
+                    </header>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <p class="lead">
+                            I'm Karen Hoffmann. My research focuses on how data visualization and interactive storytelling can make complex technological and societal topics more accessible — particularly in the context of technology forecasting and public engagement with the energy transition.
                         </p>
-                        <div class="items">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-6 ps-0">
-                                        <div class="item">
-                                            <span class="title">Name:</span>
-                                            <span class="value">Karen Hoffmann</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="title">Location:</span>
-                                            <span class="value">Niedersachsen, Germany</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 ps-0">
-                                        <div class="item">
-                                            <span class="title">E-mail:</span>
-                                            <span class="value">kar_kur (at) icloud.com</span>
-                                        </div>
-                                    </div>
+                        <p>
+                            In my Master’s thesis at the University of Bremen (in collaboration with DLR), I investigated storytelling approaches to data visualization for technology roadmaps, developing prototypes and studying how dynamic visualizations support understanding among academic, industry, and public-sector stakeholders. Related findings were presented as a conference paper at CHIIR 2025.
+                        </p>
+                        <p>
+                            At the Center for Advanced Internet Studies (CAIS), I worked as a Data Scientist on a participatory citizen engagement project examining public perceptions and acceptance of sustainable urban infrastructure and green technologies (including heat grids). I conducted qualitative and quantitative analysis (MAXQDA, R, Excel), organized user studies, and translated findings into publications, posters, and presentations, including at the IST 2025 conference.
+                        </p>
+                        <div class="row mt-4">
+                            <div class="col-md-4">
+                                <div class="item">
+                                    <span class="title">Name:</span>
+                                    <span class="value">Karen Hoffmann</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="item">
+                                    <span class="title">Location:</span>
+                                    <span class="value">Osterholz-Scharmbeck, Germany</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="item">
+                                    <span class="title">E-mail:</span>
+                                    <span class="value">kar_kur (at) icloud.com</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="buttons">
+                        <div class="buttons mt-4">
                             <a href="assets/files/cv.pdf" class="btn-custom-blue" download>Download CV</a>
                             <a href="#contact_me" class="btn-custom-dark inner-link">Message me</a>
                         </div>
                     </div>
                 </div>
-                <div class="row languages-skills">
-                    <div class="col-lg-6 languages-key-skills">
+                <div class="row languages-skills mt-5 justify-content-center gx-5">
+                    <div class="col-md-5">
                         <div class="languages">
                             <header class="custom">
                                 <h2>Languages</h2>
@@ -150,7 +143,7 @@
                                 <li class="item">
                                     <div class="info">
                                         <h3>English</h3>
-                                        <span class="level">Business</span>
+                                        <span class="level">Fluent</span>
                                     </div>
                                     <div class="rate">
                                         <span class="fill"></span>
@@ -168,20 +161,22 @@
                                     <div class="rate">
                                         <span class="fill"></span>
                                         <span class="fill"></span>
-                                        <span></span>
+                                        <span class="fill"></span>
                                         <span></span>
                                         <span></span>
                                     </div>
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="col-md-5">
                         <div class="key-skills">
                             <header class="custom">
-                                <h2>Key Skills</h2>
+                                <h2>Skills</h2>
                             </header>
                             <ul class="items">
                                 <li class="item">
-                                    <h3>Design thinking</h3>
+                                    <h3>Data analysis & visualization</h3>
                                     <div class="rate">
                                         <span class="fill"></span>
                                         <span class="fill"></span>
@@ -191,7 +186,37 @@
                                     </div>
                                 </li>
                                 <li class="item">
-                                    <h3>Analytical thinking</h3>
+                                    <h3>Qualitative & quantitative research</h3>
+                                    <div class="rate">
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <h3>Research communication & presentation</h3>
+                                    <div class="rate">
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <h3>UI/UX & prototyping</h3>
+                                    <div class="rate">
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <h3>User studies & participatory methods</h3>
                                     <div class="rate">
                                         <span class="fill"></span>
                                         <span class="fill"></span>
@@ -201,145 +226,65 @@
                                     </div>
                                 </li>
                                 <li class="item">
-                                    <h3>Wireframing and Prototyping</h3>
-                                    <div class="rate">
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <h3>User research</h3>
+                                    <h3>Branding & visual identity</h3>
                                     <div class="rate">
                                         <span class="fill"></span>
                                         <span class="fill"></span>
                                         <span class="fill"></span>
                                         <span class="fill"></span>
                                         <span></span>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <h3>Machine learning</h3>
-                                    <div class="rate">
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <h3>Adoptability</h3>
-                                    <div class="rate">
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <h3>Team working</h3>
-                                    <div class="rate">
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                    </div>
-                                </li>
-                                <li class="item">
-                                    <h3>Attention to detail</h3>
-                                    <div class="rate">
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
-                                        <span class="fill"></span>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 web-skills mt-5 mt-lg-0">
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 web-skills">
                         <header class="custom">
                             <h2>My Technical Skills</h2>
                         </header>
-                        <div class="container">
-                            <div class="items row">
-                                <div class="col-xl-4 col-sm-6 px-2">
-                                    <div class="item">
-                                        <img src="assets/images/web skills/python.png" alt="python">
-                                        <h3>Python</h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-sm-6 px-2">
-                                    <div class="item">
-                                        <img src="assets/images/web skills/figma.png" alt="figma">
-                                        <h3>Figma</h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-sm-6 px-2">
-                                    <div class="item">
-                                        <img src="assets/images/web skills/unreal.png" alt="unreal">
-                                        <h3>Unreal Engine</h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-sm-6 px-2">
-                                    <div class="item">
-                                        <img src="assets/images/web skills/html5.png" alt="html5">
-                                        <h3>HTML 5</h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-sm-6 px-2">
-                                    <div class="item">
-                                        <img src="assets/images/web skills/css3.png" alt="css3">
-                                        <h3>CSS 3</h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-sm-6 px-2">
-                                    <div class="item">
-                                        <img src="assets/images/web skills/js.png" alt="JavaScript">
-                                        <h3>JavaScript</h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-sm-6 px-2">
-                                    <div class="item">
-                                        <img src="assets/images/web skills/blender.png" alt="Blender">
-                                        <h3>Blender</h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-sm-6 px-2">
-                                    <div class="item">
-                                        <img src="assets/images/web skills/adobe.png" alt="Adobe">
-                                        <h3>Adobe Creative</h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-sm-6 px-2">
-                                    <div class="item">
-                                        <img src="assets/images/web skills/swift.png" alt="Swift">
-                                        <h3>Swift</h3>
-                                    </div>
-                                </div>
+                        <div class="items">
+                            <div class="item">
+                                <img src="assets/images/web skills/R.png" alt="R">
+                                <h3>R</h3>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="certificates">
-                    <header class="custom">
-                        <h2>My Certifications</h2>
-                    </header>
-                    <div class="items row justify-content-center">
-                        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 item">
-                            <img src="assets/images/certifications/1.png" alt="certification">
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 item">
-                            <img src="assets/images/certifications/2.png" alt="certification">
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 item">
-                            <img src="assets/images/certifications/3.png" alt="certification">
+                            <div class="item">
+                                <img src="assets/images/web skills/python.png" alt="python">
+                                <h3>Python</h3>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/web skills/figma.png" alt="figma">
+                                <h3>Figma</h3>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/web skills/unreal.png" alt="unreal">
+                                <h3>Unreal Engine</h3>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/web skills/html5.png" alt="html5">
+                                <h3>HTML 5</h3>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/web skills/css3.png" alt="css3">
+                                <h3>CSS 3</h3>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/web skills/js.png" alt="JavaScript">
+                                <h3>JavaScript</h3>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/web skills/blender.png" alt="Blender">
+                                <h3>Blender</h3>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/web skills/adobe.png" alt="Adobe">
+                                <h3>Adobe Creative</h3>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/web skills/swift.png" alt="Swift">
+                                <h3>Swift</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -364,13 +309,14 @@
                                     <i class="las la-university"></i>
                                 </div>
                                 <div class="box">
-                                    <span class="year">2021 - Present</span>
-                                    <h2 class="title">M.Sc. Digital Media</h2>
+                                    <span class="year">2021 - 2024</span>
+                                    <h2 class="title">M.Sc. Media Informatics</h2>
                                     <p>University of Bremen, Germany
                                         <br>
                                         <br>
-                                        Successfully completed courses including UI/UX, VR, and Edge Computing, a master project Creabots to
-                                        research about the use of virtual environments to study and learn about affordances through the use of reinforcement learning and a master thesis under DLR about storytelling visualization for an application development for vehicle technology with Oracle database.
+                                        Master’s thesis on storytelling visualization for the effective use of transitions in scientific visualization, focusing on relationships among vehicle technologies (in collaboration with DLR). GPA 1.59.
+                                        <br>
+                                        Related conference paper presented at CHIIR 2025.
                                     </p>
                                 </div>
                             </div>
@@ -384,10 +330,13 @@
                                     <p>University of Calgary, Canada
                                         <br>
                                         <br>
-                                        Majored in Computer Science with a concentration in Human-Computer Interaction and minored in
-                                        Management and Society.
+                                        Concentration in Human-Computer Interaction, minor in Management and Society.
                                         <br>
-                                        Awarded the IDEAS Fund from the Faculty of Science, University of Calgary.
+                                        Designed and developed an iOS scanner application for a grocery store chain (sponsored by MNP and Calgary CO-OP).
+                                        <br>
+                                        Awarded the IDEAS Fund from the Faculty of Science.
+                                        <br>
+                                        Served as a Teaching Assistant for 3 undergraduate Japanese language courses.
                                     </p>
                                 </div>
                             </div>
@@ -423,13 +372,32 @@
                                     <i class="las la-briefcase"></i>
                                 </div>
                                 <div class="box">
-                                    <span class="year">2022 - Present</span>
+                                    <span class="year">2024 - 2025</span>
+                                    <h2 class="title">Data Scientist</h2>
+                                    <p>Center for Advanced Internet Studies (CAIS), Bochum, Germany
+                                        <br>
+                                        <br>
+                                        Designed and implemented a research study on citizen acceptance of smart city initiatives and sustainable urban infrastructure, funded by the Volkswagen Foundation.
+                                        <br>
+                                        Conducted qualitative and quantitative data analysis using MAXQDA, Excel, and R.
+                                        <br>
+                                        Translated outcomes into peer-reviewed publications, conference papers, posters, and presentations (including at IST 2025).
+                                    </p>   
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="las la-briefcase"></i>
+                                </div>
+                                <div class="box">
+                                    <span class="year">2022 - 2024</span>
                                     <h2 class="title">Student Assistant</h2>
-                                    <p>The SOCIUM Research Center on Inequality and Social Policy, Germany
+                                    <p>SOCIUM Research Center, Bremen, Germany
                                         <br>
                                         <br>
-                                        Researched and developed a web application for the public to use and compare published literature with a
-                                        method to compare casual logic across models in Flask.
+                                        Developed a web application in Flask for comparing sociological literature to improve interface usability and accessibility through user-centered design.
+                                        <br>
+                                        Maintained and enhanced API documentation on GitHub.
                                     </p>
                                 </div>
                             </div>
@@ -439,12 +407,13 @@
                                 </div>
                                 <div class="box">
                                     <span class="year">2023 - 2024</span>
-                                    <h2 class="title">Student Assistant</h2>
-                                    <p> DLR (The German Aerospace Center, Germany)
+                                    <h2 class="title">Student Research Assistant</h2>
+                                    <p>German Aerospace Center (DLR), Stuttgart, Germany
                                         <br>
                                         <br>
-                                        Research and develop an Oracle APEX application of an interactive technology forecasting tool for vehicle technology as a part of a Master thesis.
-                                        Research on a situation of light weight vehicles in Germany and Japan.
+                                        Conducted research and data collection on technical and industry topics to support ongoing research.
+                                        <br>
+                                        Researched, designed, and developed an Oracle APEX application with SQL databases for interactive vehicle technology forecasting as part of the Master’s thesis.
                                     </p>
                                 </div>
                             </div>
@@ -496,6 +465,9 @@
                 <button data-group="all" class="active">
                     <h4>All</h4>
                 </button>
+                <button data-group="Research">
+                    <h4>Research</h4>
+                </button>
                 <button data-group="Developing">
                     <h4>Developing</h4>
                 </button>
@@ -508,6 +480,81 @@
             </div>
             <div class="container">
                 <div class="row work-items">
+                    <div class="col-sm-6 col-lg-4 item" data-groups='["Research"]'>
+                        <div 
+                            class="wrap"
+                            data-image="assets/images/works/pop.png"
+                            data-title="Public Perceptions of the Energy Transition"
+                            data-description="Data Scientist at the Center for Advanced Internet Studies (CAIS). 
+                            Designed and implemented a research study on citizen acceptance of smart city initiatives and sustainable urban infrastructure (including heat grids), 
+                            funded by the Volkswagen Foundation. Conducted qualitative and quantitative analysis using MAXQDA, Excel, and R; organized user studies; and translated findings 
+                            into peer-reviewed publications, conference papers, posters, and presentations (including at IST 2025)."
+                            data-client="Center for Advanced Internet Studies (CAIS)"
+                            data-completed="2025"
+                            data-skills="Research Design, MAXQDA, R, Excel, User Studies, Data Visualization, Conference Presentation"
+                            data-project-link="cais-project.html">   <!-- ← This line opens the dedicated page -->
+                            <img src="assets/images/works/pop.png" alt="PopCiCL Research">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 item" data-groups='["Research", "Developing"]'>
+                        <div 
+                            class="wrap"
+                            data-image="assets/images/works/dlr.png"
+                            data-title="Interactive Technology Roadmaps"
+                            data-description="Conducted a user-centered UX research and design study exploring how visual analytics and 
+                            interactive storytelling can improve the usability and accessibility of Technology Roadmaps (TRMs). 
+                            Designed and evaluated two interactive prototype interfaces — a dashboard-style layout and a drill-down navigation system — 
+                            using stakeholder feedback from academic, industry, and public-sector stakeholders. Applied UX evaluation methods including usability testing, 
+                            task analysis, Likert-scale questionnaires, and correlation analysis. Developed the supporting application using Oracle APEX and SQL databases 
+                            as part of the Master’s thesis at the University of Bremen with DLR."
+                            Presented findings on design decisions and the use of storytelling in data visualization for technology forecasting. Explored how interactive visualizations can support understanding of complex technology relationships at CHIIR 2025."
+                            data-client="University of Bremen, DLR"
+                            data-completed="2025"
+                            data-skills="UX Research, Prototyping, Data Visualization"
+                            data-project-link="thesis-project.html"> 
+                            <img src="assets/images/works/dlr.png" alt="work">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 item" data-groups='["Developing"]'>
+                        <div 
+                            class="wrap"
+                            data-image="assets/images/works/2.mp4"
+                            data-title="iOS app: CO-OP Scanner"
+                            data-description="I designed and developed a scanner application that improves business performance and client satisfaction of a grocery store chain. We succeeded in pitching project to Calgary CO-OP, and got sponsored to complete work in partnership with MNP."
+                            data-client="University of Calgary, Calgary CO-OP, MNP"
+                            data-completed="October 1st, 2021"
+                            data-skills="Prototyping, UX Research, Developing in Swift"
+                            data-project-link="assets/images/works/2.pdf"
+                        >
+                            <img src="assets/images/works/2.png" alt="work">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 item" data-groups='["Developing"]'>
+                        <div 
+                            class="wrap"
+                            data-image="assets/images/works/9.png"
+                            data-title="Bibfilter"
+                            data-description="I designed and developed a web application for the public to use and compare published literature with a method to compare casual logic across models in Flask."
+                            data-completed="May 2024"
+                            data-client="SOCIUM"
+                            data-skills="HTML, CSS, Python, JavaScript, Flask, Adobe Creative"
+                            data-project-link="https://karenkuri.github.io/landingpage.html"
+                        >
+                            <img src="assets/images/works/9.png" alt="work">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 item" data-groups='["Prototyping"]'>
+                        <div 
+                            class="wrap"
+                            data-image="assets/images/works/foodie.png"
+                            data-title="A food delivery app"
+                            data-description="I designed and prototyped with figma for showing an example of how a food delivery app platform can look like."
+                            data-skills="Figma"
+                            data-project-link="https://www.figma.com/design/Da9WdH4N3oVvidHmgzK5gR/foodie-app?node-id=0-1&t=1PwN8nbLrU79TaL8-1"
+                        >
+                            <img src="assets/images/works/foodie.png" alt="work">
+                        </div>
+                    </div>
                     <div class="col-sm-6 col-lg-4 item" data-groups='["Developing"]'>
                         <div 
                             class="wrap"
@@ -521,32 +568,16 @@
                             <img src="assets/images/works/1.png" alt="work">
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 item" data-groups='["Developing"]'>
+                    <div class="col-sm-6 col-lg-4 item" data-groups='["Prototyping"]'>
                         <div 
                             class="wrap"
-                            data-image="assets/images/works/2.mp4"
-                            data-title="iOS app: CO-OP Scanner"
-                            data-description="We designed and developed a scanner application that improves business performance and client satisfaction of a grocery store chain. We succeeded in pitching project to Calgary CO-OP, and got sponsored to complete work in partnership with MNP."
-                            data-client="University of Calgary, Calgary CO-OP, MNP"
-                            data-completed="October 1st, 2021"
-                            data-skills="UI/UX, User Research, Swift"
-                            data-project-link="assets/images/works/2.pdf"
+                            data-image="assets/images/works/20_1.png"
+                            data-title="A tourism website"
+                            data-description="I designed with figma for showing an example of how a tourism web platform can look like."
+                            data-skills="Figma"
+                            data-project-link="https://www.figma.com/proto/oGqt3e5Gsm7ayTVdEfO40A/travel-website?node-id=1-28&t=uJejNhqZxm1y8ZmY-1"
                         >
-                            <img src="assets/images/works/2.png" alt="work">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 item" data-groups='["Developing"]'>
-                        <div 
-                            class="wrap"
-                            data-image="assets/images/works/9.png"
-                            data-title="Bibfilter"
-                            data-description="Researching and developing a web application for the public to use and compare published literature with a method to compare casual logic across models in Flask."
-                            data-completed="Current project"
-                            data-client="SOCIUM"
-                            data-skills="HTML, CSS, Python, JavaScript, Flask, Adobe Creative"
-                            data-project-link=""
-                        >
-                            <img src="assets/images/works/9.png" alt="work">
+                            <img src="assets/images/works/20_1.png" alt="work">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4 item" data-groups='["Developing"]'>
@@ -554,7 +585,7 @@
                             class="wrap"
                             data-image="assets/images/works/3.mp4"
                             data-title="Brick Out"
-                            data-description="The game is to destroy the bricks by hitting them with the ball. The user must keep the ball in play by moving the paddle with your mouse."
+                            data-description="I developed a game with Processing. This game is to destroy the bricks by hitting them with the ball. The user must keep the ball in play by moving the paddle with your mouse."
                             data-client="University of Bremen"
                             data-completed="January, 2022"
                             data-skills="Processing"
@@ -599,7 +630,7 @@
                             data-description="We implemented a jacket that plays a screaming noise from a speaker that is under the collar whenever someone grabs arm by triggering the touch sensors. If that person does not let you go for some reason, the screaming jacket will send a message automatically to someone, such as family members and best friends"
                             data-client="University of Calgary"
                             data-completed="March, 2020"
-                            data-skills="Arduino"
+                            data-skills="Arduino, Prototyping"
                             data-project-link="https://karenpin0419.wixsite.com/mysite/project-2"
                         >
                             <img src="assets/images/works/6.png" alt="work">
@@ -610,11 +641,11 @@
                             class="wrap"
                             data-image="assets/images/works/7.mp4"
                             data-title="The Spelling Checker"
-                            data-description="It is a prototype of a creative way to improve users' typing skills."
+                            data-description="It is a prototype of a creative way to improve users' typing skills. The focus on this project was being creative."
                             data-client="University of Bremen"
                             data-completed="July, 2022"
                             data-skills="Figma"
-                            data-project-link="#"
+                            data-project-link="assets/images/works/7.mp4"
                         >
                             <img src="assets/images/works/7.png" alt="work">
                         </div>
@@ -624,7 +655,7 @@
                             class="wrap"
                             data-image="assets/images/works/8_1.png"
                             data-title="City Campus at the Weser"
-                            data-description="Created 3D models and physical models of a building plan for the city campus of the University of Bremen. Holded an exhibition and invited the Green Party."
+                            data-description="I created 3D models and physical models of a building plan for the city campus of the University of Bremen. We holded an exhibition and invited the Green Party."
                             data-completed="March, 2022"
                             data-client="University of Bremen"
                             data-skills="Blender, Laser cutter, 3D printing"
@@ -638,10 +669,10 @@
                             class="wrap"
                             data-image="assets/images/works/10.mp4"
                             data-title="The Gudetama Button"
-                            data-description="The animation is to present the characteristics of Gudetama through interactions."
+                            data-description="The animation is to present the characteristics of Gudetama through interactive animation. It was focus on the process of sketching to implementation"
                             data-client="University of Calgary"
                             data-completed="February, 2020"
-                            data-skills="C#"
+                            data-skills="C#, Prototyping"
                             data-project-link="https://karenpin0419.wixsite.com/mysite/project-0"
                         >
                             <img src="assets/images/works/10.png" alt="work">
@@ -652,10 +683,11 @@
                             class="wrap"
                             data-image="assets/images/works/11.mp4"
                             data-title="Message in a Bottle"
-                            data-description="The prototype is to explore a new way to connect over a distance without worrying about the time."
+                            data-description="The prototype is to explore a new way to connect over a distance without worrying about the time. It was focused on the process of sketching to some animation of the interface
+                            while focusing on persona of users"
                             data-client="University of Calgary"
                             data-completed="April, 2020"
-                            data-skills="Kotlin"
+                            data-skills="Kotlin, Prototyping"
                             data-project-link="https://karenpin0419.wixsite.com/mysite/project-3"
                         >
                             <img src="assets/images/works/11.png" alt="work">
@@ -666,7 +698,7 @@
                     class="wrap"
                     data-image="assets/images/works/12.mp4"
                     data-title="Shake to Unlock"
-                    data-description="The prototype is to explore a new way to unlock a phone with a sensor input."
+                    data-description="The prototype is to explore a new way to unlock a phone with a sensor input. It was focused on designing mockups of unlocking features in a creative way. "
                     data-client="University of Calgary"
                     data-completed="February, 2020"
                     data-skills="Kotlin"
@@ -680,7 +712,7 @@
                     class="wrap"
                     data-image="assets/images/works/13.mp4"
                     data-title="Water to Unlock"
-                    data-description="The prototype is to explore a new way to unlock a phone with a multi-touch input."
+                    data-description="The prototype is to explore a new way to unlock a phone with a multi-touch input. It was focused on designing mockups of unlocking features in a creative way."
                     data-client="University of Calgary"
                     data-completed="February, 2020"
                     data-skills="Kotlin"
@@ -698,7 +730,7 @@
                     data-client="University of Bremen"
                     data-completed="May, 2022"
                     data-skills="Figma"
-                    data-project-link="#"
+                    data-project-link="assets/images/works/14.mp4"
                 >
                     <img src="assets/images/works/14.png" alt="work">
                 </div>
@@ -708,11 +740,11 @@
                     class="wrap"
                     data-image="assets/images/works/15.mp4"
                     data-title="Jim's Purgatory"
-                    data-description="The game is to keep eating flies as a frog in the hell without falling into the lava"
+                    data-description="The game is to keep eating flies as a frog in the hell without falling into the lava."
                     data-client="University of Calgary"
                     data-completed="March, 2020"
                     data-skills="VIC-20, Assembly"
-                    data-project-link="#"
+                    data-project-link="assets/images/works/15.mp4"
                 >
                     <img src="assets/images/works/15.png" alt="work">
                 </div>
@@ -722,7 +754,7 @@
                     class="wrap"
                     data-image="assets/images/works/16.png"
                     data-title="U-Collaborator"
-                    data-description="The prototype is explore for an interface to schedule for group collaborations based on user researches"
+                    data-description="The prototype is explore for an interface to schedule for group collaborations based on user researches."
                     data-client="University of Calgary"
                     data-completed="December, 2019"
                     data-skills="Adobe XD, user research"
@@ -776,7 +808,7 @@
         </div>
     </div>
         </section>
-        <section id="contact_me" class="active">
+        <section id="contact_me">
             <div class="text-center">
                 <header class="has-bg">
                     <img src="assets/images/h1-bg.png" alt="h1 bg">
@@ -821,7 +853,7 @@
                             <i class="las la-envelope"></i>
                             <div class="text">
                                 <span class="title">Email:</span>
-                                <a href="mailto:kar_kur@uni-bremen.de">kar_kur (at) uni-bremen.de</a>
+                                <a href="mailto:kar_kur@icloud.com">kar_kur (at) icloud.com</a>
                             </div>
                         </div>
                     </div>
