@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Transition Discourse | Karen Hoffmann</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        body { background: #151516; color: #fff; }
+        .project-hero { padding: 6rem 0 3rem; text-align: center; }
+        .project-hero h1 { font-size: clamp(1.8rem, 4.5vw, 2.6rem); margin-bottom: 0.5rem; }
+        .project-hero .meta { color: #B6B7BA; margin-bottom: 2rem; line-height: 1.6; }
+        .section { padding: 2rem 0; max-width: 900px; margin: 0 auto; }
+        .section h2 { text-align: center; margin-bottom: 1.5rem; color: #658DF2; }
+        .section p, .section li { color: #B6B7BA; max-width: none; }
+        .section ul { margin-left: 1.2rem; }
+        .section li { margin-bottom: 0.4rem; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th, td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid #2a2a2c; }
+        th { color: #808185; font-weight: 500; }
+        .card { background: #1E1E20; border-radius: 8px; padding: 1.2rem; margin: 1rem 0; }
+        .back-link { margin-top: 1rem; display: inline-block; }
+        .section.text-center { text-align: center; }
+        a { color: #658DF2; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="project-hero">
+            <h1>What Are We Talking About When We Talk About the Energy Transition?</h1>
+         </div>
+
+        <div class="section">
+            <h2>Motivation</h2>
+            <p>While working at CAIS, a colleague asked whether it would be possible to take official government documents, extract the main topics, and analyse how they were discussed. This project applies that idea to the energy transition: using public Bundestag protocols to track what was said, by whom, and how the framing changed between 2023 and 2024.</p>
+            <p>This project examines how the energy transition has been discussed in the German Bundestag. Using natural language processing on plenary debate transcripts, it tracks changes in topical emphasis and party-specific framing between 2023 and 2024.</p>
+            <p>The work is a small, fully reproducible computational social science study designed for a research portfolio and PhD applications.</p>
+        </div>
+
+        <div class="section">
+            <h2>Research Question</h2>
+            <p>How have topics, concerns and arguments surrounding the energy transition been discussed in German parliamentary debates, and how have these discussions changed between 2023 and 2024?</p>
+        </div>
+
+        <div class="section">
+            <h2>Methodology</h2>
+            <ul>
+                <li><strong>Data</strong>: Official Bundestag plenary protocols (XML), downloaded from the public Bundestag server.</li>
+                <li><strong>Extraction</strong>: Custom parser for speech text, speaker and faction.</li>
+                <li><strong>Relevance filter</strong>: Speeches retained only if they contained at least two distinct energy-transition indicators (Energiewende, Heizungsgesetz, Wasserstoff, Energiepreis, Wärmepumpe, Netzausbau, etc.).</li>
+                <li><strong>Corpus</strong>: 470 high-precision speeches (2023) and 386 high-precision speeches (2024), from 35 sessions each year, collected and filtered with an identical R pipeline. Comparisons use within-year percentages.</li>
+                <li><strong>Analysis</strong>: Keyword shares (percentage of high-precision speeches containing each term); contextual inspection of party framing.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Results</h2>
+            <div class="card">
+                <p>Results are reported as the percentage of high-precision speeches containing each term (35 sessions per year). High-precision corpus: 470 speeches (2023), 386 speeches (2024).</p>
+            </div>
+            <img src="assets/images/works/keyword_shares_2023_2024.png" alt="Keyword shares 2023 vs 2024" style="width:100%; max-width:700px; border-radius:6px; margin:1rem auto; display:block;">
+            <table>
+                <thead>
+                    <tr><th>Term</th><th>2023</th><th>2024</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Wasserstoff</td><td>22.6 %</td><td>23.6 %</td></tr>
+                    <tr><td>Heizungsgesetz</td><td>7.45 %</td><td>9.33 %</td></tr>
+                    <tr><td>Strompreis</td><td>11.7 %</td><td>18.4 %</td></tr>
+                    <tr><td>Energiepreis</td><td>14.0 %</td><td>19.4 %</td></tr>
+                    <tr><td>Energiewende</td><td>19.1 %</td><td>21.2 %</td></tr>
+                    <tr><td>Wärmepumpe</td><td>5.96 %</td><td>9.84 %</td></tr>
+                </tbody>
+            </table>
+            <p><strong>Party framing</strong>: Opposition parties (CDU/CSU, AfD) used sharper failure and repeal language. Government parties (SPD, Greens) emphasised external price shocks and crisis management. The same policy objects were discussed; the evaluative frames diverged.</p>
+            <p><strong>Negative-cue rates in 2024</strong>: AfD 84.4 %, CDU/CSU 63.4 %, FDP 60.6 %, SPD 53.3 %, Greens 37.7 %.</p>
+        </div>
+
+        <div class="section">
+            <h2>Evidence</h2>
+            <p>Negative-cue rates in 2024: AfD 84 %, CDU/CSU 63 %, FDP 61 %, SPD 53 %, Greens 38 %.</p>
+            <div class="card">
+                <p><strong>Heizungsgesetz – CDU/CSU 2024</strong><br>
+                “…dieses unsägliche Heizungsgesetz, wahrscheinlich der größte Bürokratiezubau der letzten 20 Jahre…”<br>
+                <em>“…this dreadful Heating Act, probably the biggest increase in bureaucracy of the last 20 years…”</em></p>
+                <p><strong>Heizungsgesetz – AfD 2024</strong><br>
+                “…das Heizungsgesetz ohne Rücksicht auf Verluste durch den Bundestag gepeitscht…”<br>
+                <em>“…the Heating Act was rammed through the Bundestag without regard for the consequences…”</em></p>
+                <p><strong>Energiepreis – SPD 2024</strong><br>
+                “…sind die Energiepreise auch durch das beherzte Eingreifen der Ampelkoalition wieder deutlich gesunken.”<br>
+                <em>“…energy prices have fallen significantly again, also thanks to the decisive intervention of the coalition.”</em></p>
+                <p><strong>Energiepreis – Greens 2024</strong><br>
+                “…die Energiepreise wieder auf das Niveau von vor dem von Putin gestarteten Energiepreisangriff… zu senken.”<br>
+                <em>“…to bring energy prices back down to the level before Putin’s energy-price attack…”</em></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Limitations</h2>
+            <ul>
+                <li>Descriptive design only; no causal claims.</li>
+                <li>Keyword filter admits some mixed political rhetoric.</li>
+                <li>Plenary speeches only (no committees, media or public opinion).</li>
+                <li>Two years within one legislative period.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Future Plans</h2>
+            <ul>
+                <li>Extend the pipeline to 2022 and 2025.</li>
+                <li>Manually validate 150–200 speeches to measure filter precision and recall.</li>
+                <li>Add speech-length normalisation and agenda-item controls.</li>
+                <li>Compare with newspaper coverage of the same keywords.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>What the Project Delivers</h2>
+            <ul>
+                <li>A reproducible pipeline (collection → high-precision filter → comparable percentage shares)</li>
+                <li>A clean two-year comparison (2023 vs 2024) collected and filtered the same way</li>
+                <li>Evidence that topical emphasis shifted (Energiepreis, Strompreis, Heizungsgesetz and Wärmepumpe up; Wasserstoff stable)</li>
+                <li>Party-specific framing differences that become sharper in 2024</li>
+                <li>Documented limitations (single chamber, keyword filter, descriptive design, residual political rhetoric)</li>
+            </ul>
+            <p>It demonstrates the ability to formulate a focused research question, build a reproducible pipeline from public sources, critically assess computational results against actual speech content, and report findings with claim strength matched to the evidence.</p>
+        </div>
+
+        <div class="section text-center">
+            <a href="index.html#my_work" class="btn-custom-blue">← Back to Portfolio</a>
+        </div>
+    </div>
+</body>
+</html>
